@@ -28,9 +28,3 @@ def turn_antivirus_off():
         subprocess.run(["powershell", "-command", powershell_command])
     except:
         print("Fout bij het uitvoeren van het PowerShell-commando.")
-
-
-check_antivirus_status()
-turn_antivirus_off()
-time.sleep(5)
-check_antivirus_status()
